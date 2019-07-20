@@ -1,0 +1,13 @@
+Node.js and chrome complies javascript over v8 engine which is written in c++
+
+localstorage.getItem.... interestingly they are not javascript but is implemented by chrome's runtime which later c++ code executes behind scene, 
+so basically they are c++ code.
+Even in node, we use fs.readfile or os.platform, they too are c++ code not javascript
+
+in node we have global instead of window, and for document we have process in node as node dnt have DOM so document does not make sense
+
+Node.js uses an event-driven, non-blocking I/O model that makes it light weight and efficient. I/O means input output like a accessing file from disk
+, or reading data from database, but here in node they are non blocking which means while suppose it is fetching code from database, other operations
+will continue to work without interuption 
+
+1. npm init
